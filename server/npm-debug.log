@@ -1,0 +1,69 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'node@5.5.0' ]
+2 info using npm@2.14.4
+3 info using node@v4.1.1
+4 verbose install initial load of /Users/NukeZ/Desktop/GooeyPages/package.json
+5 verbose installManyTop reading scoped package data from /Users/NukeZ/Desktop/GooeyPages/node_modules/node/package.json
+6 info package.json node@0.0.0 No description
+7 info package.json node@0.0.0 No repository field.
+8 info package.json node@0.0.0 No README data
+9 info package.json node@0.0.0 No license field.
+10 verbose readDependencies loading dependencies from /Users/NukeZ/Desktop/GooeyPages/package.json
+11 silly cache add args [ 'node@5.5.0', null ]
+12 verbose cache add spec node@5.5.0
+13 silly cache add parsed spec Result {
+13 silly cache add   raw: 'node@5.5.0',
+13 silly cache add   scope: null,
+13 silly cache add   name: 'node',
+13 silly cache add   rawSpec: '5.5.0',
+13 silly cache add   spec: '5.5.0',
+13 silly cache add   type: 'version' }
+14 silly addNamed node@5.5.0
+15 verbose addNamed "5.5.0" is a plain semver version for node
+16 silly mapToRegistry name node
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry uri https://registry.npmjs.org/node
+20 verbose addNameVersion registry:https://registry.npmjs.org/node not in flight; fetching
+21 verbose request uri https://registry.npmjs.org/node
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 7:01:22 PM
+24 verbose request id 171174c288c7baec
+25 verbose etag "4RB0I162TMBFF7IWMPCBRMD3L"
+26 http request GET https://registry.npmjs.org/node
+27 http 304 https://registry.npmjs.org/node
+28 silly get cb [ 304,
+28 silly get   { date: 'Fri, 19 Feb 2016 03:01:22 GMT',
+28 silly get     via: '1.1 varnish',
+28 silly get     'cache-control': 'max-age=300',
+28 silly get     etag: '"4RB0I162TMBFF7IWMPCBRMD3L"',
+28 silly get     age: '39',
+28 silly get     connection: 'keep-alive',
+28 silly get     'x-served-by': 'cache-lax1424-LAX',
+28 silly get     'x-cache': 'HIT',
+28 silly get     'x-cache-hits': '1',
+28 silly get     'x-timer': 'S1455850882.198566,VS0,VE0',
+28 silly get     vary: 'Accept' } ]
+29 verbose etag https://registry.npmjs.org/node from cache
+30 verbose get saving node to /Users/NukeZ/.npm/registry.npmjs.org/node/.cache.json
+31 verbose stack Error: version not found: node@5.5.0
+31 verbose stack     at setData (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:137:12)
+31 verbose stack     at RES (/usr/local/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+31 verbose stack     at f (/usr/local/lib/node_modules/npm/node_modules/once/once.js:17:25)
+31 verbose stack     at fixName (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:29:5)
+31 verbose stack     at saved (/usr/local/lib/node_modules/npm/lib/cache/caching-client.js:173:7)
+31 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+31 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
+32 verbose statusCode 404
+33 verbose cwd /Users/NukeZ/Desktop/GooeyPages/server
+34 error Darwin 14.5.0
+35 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "node@5.5.0"
+36 error node v4.1.1
+37 error npm  v2.14.4
+38 error version not found: node@5.5.0
+39 error If you need help, you may report this error at:
+39 error     <https://github.com/npm/npm/issues>
+40 verbose exit [ 1, true ]

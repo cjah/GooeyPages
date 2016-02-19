@@ -12,7 +12,7 @@ Bundler.bundle = function(req,res, next) {
     //create server.js file with routes to each html page
     serverText =  "const express = require('express'); \nconst fs = require('fs');\nconst path = require('path'); \nconst app = express(); \n\n"
 
-    for(let i in files) {
+    for(var i in files) {
       serverText += `app.get('/${files[i].replace()}')`
     }
 
